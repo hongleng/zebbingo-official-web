@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 lg:p-12 relative overflow-x-hidden">
-      
+
       {/* ==================== MOBILE/TABLET LAYOUT (< 1280px) ==================== */}
       <div className="xl:hidden flex flex-col items-center w-full max-w-[600px] mx-auto text-center">
-        
+
         {/* 1. Logo - Spanning nearly whole width */}
         <div className="relative w-[90%] aspect-square max-h-[300px] -my-10">
-           <Image 
-            src="/assets/Zebbingo_Logo_RGB.png" 
-            alt="Zebbingo Logo" 
+          <Image
+            src="/assets/Zebbingo_Logo_RGB.png"
+            alt="Zebbingo Logo"
             fill
             className="object-contain"
             priority
@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* 2. Heading - Bold, ensure single line */}
         {/* Using clamp or responsive text to ensure it fits on one line */}
-        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight w-full mt-8 mb-4">
+        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight w-full mt-4 mb-8 md:mb-12">
           We&apos;re building something exciting.
         </h1>
 
@@ -36,14 +36,14 @@ export default function Home() {
         </div>
 
         {/* 6. Main Text - Split into two paragraphs, NOT bold */}
-        <div className="mt-4 text-base md:text-lg text-black leading-relaxed px-2 font-normal">
+        <div className="mt-8 md:mt-12 text-base md:text-lg text-black leading-relaxed px-2 font-normal">
           <p>
             Our interactive, AI-powered device nurtures curiosity, creativity and emotional intelligence through personalised storytelling that grows with every child.
           </p>
         </div>
 
         {/* 7. CTA - Single line, Bold */}
-        <div className="mt-8 w-full">
+        <div className="mt-8 md:mt-12 w-full">
           <p className="text-[clamp(1rem,3.5vw,1.8rem)] font-bold text-black">
             What will you find on your <span className="text-[#6EC4E8]">Zebbingo</span> adventure?
           </p>
@@ -55,22 +55,22 @@ export default function Home() {
       {/* ==================== DESKTOP LAYOUT (>= 1280px) ==================== */}
       {/* This preserves the original layout that was confirmed as "fine" */}
       <div className="hidden xl:flex w-full max-w-[1400px] flex-col gap-10">
-        
+
         {/* Content Grid */}
         <div className="grid grid-cols-[1.1fr_0.9fr] gap-8 items-start">
-          
+
           {/* Left Column */}
           <div className="flex flex-col items-start space-y-0 -mt-12">
-             {/* Top Headline */}
+            {/* Top Headline */}
             <h1 className="text-5xl font-bold text-black leading-tight tracking-tight">
               We&apos;re building something exciting.
             </h1>
 
             {/* Logo Section */}
             <div className="relative w-96 h-96 -ml-5 -mt-8 -mb-8">
-              <Image 
-                src="/assets/Zebbingo_Logo_RGB.png" 
-                alt="Zebbingo Logo" 
+              <Image
+                src="/assets/Zebbingo_Logo_RGB.png"
+                alt="Zebbingo Logo"
                 fill
                 className="object-contain object-left"
                 priority
@@ -96,7 +96,7 @@ export default function Home() {
               />
             </div>
           </div>
-        
+
         </div>
 
         {/* Bottom Text */}
