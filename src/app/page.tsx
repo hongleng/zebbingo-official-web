@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 lg:p-12 relative overflow-x-hidden">
-
+      
       {/* ==================== MOBILE/TABLET LAYOUT (< 1280px) ==================== */}
       <div className="xl:hidden flex flex-col items-center w-full max-w-[600px] mx-auto text-center">
-
+        
         {/* 1. Logo - Spanning nearly whole width */}
         <div className="relative w-[90%] aspect-square max-h-[300px] -my-10">
-           <Image
-            src="/assets/Zebbingo_Logo_RGB.png"
-            alt="Zebbingo Logo"
+           <Image 
+            src="/assets/Zebbingo_Logo_RGB.png" 
+            alt="Zebbingo Logo" 
             fill
             className="object-contain"
             priority
@@ -42,12 +42,9 @@ export default function Home() {
         </h1>
 
         {/* 6. Main Text - Split into two paragraphs, NOT bold */}
-        <div className="mt-4 text-base md:text-lg text-black leading-relaxed px-2 space-y-4 font-normal">
+        <div className="mt-4 text-base md:text-lg text-black leading-relaxed px-2 font-normal">
           <p>
-            Our interactive, AI-powered device nurtures curiosity, creativity and emotional intelligence.
-          </p>
-          <p>
-            Through personalised storytelling that grows with every child.
+            Our interactive, AI-powered device nurtures curiosity, creativity and emotional intelligence through personalised storytelling that grows with every child.
           </p>
         </div>
 
@@ -64,10 +61,10 @@ export default function Home() {
       {/* ==================== DESKTOP LAYOUT (>= 1280px) ==================== */}
       {/* This preserves the original layout that was confirmed as "fine" */}
       <div className="hidden xl:flex w-full max-w-[1400px] flex-col gap-10">
-
+        
         {/* Content Grid */}
         <div className="grid grid-cols-[1.1fr_0.9fr] gap-8 items-start">
-
+          
           {/* Left Column */}
           <div className="flex flex-col items-start space-y-0 -mt-12">
              {/* Top Headline */}
@@ -77,9 +74,9 @@ export default function Home() {
 
             {/* Logo Section */}
             <div className="relative w-96 h-96 -ml-5 -mt-8 -mb-8">
-              <Image
-                src="/assets/Zebbingo_Logo_RGB.png"
-                alt="Zebbingo Logo"
+              <Image 
+                src="/assets/Zebbingo_Logo_RGB.png" 
+                alt="Zebbingo Logo" 
                 fill
                 className="object-contain object-left"
                 priority
@@ -105,7 +102,7 @@ export default function Home() {
               />
             </div>
           </div>
-
+        
         </div>
 
         {/* Bottom Text */}
