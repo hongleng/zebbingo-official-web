@@ -9,7 +9,7 @@ export default function Home() {
 
         {/* 1. Logo - Spanning nearly whole width */}
         <div className="relative w-[90%] aspect-square max-h-[300px] -my-10">
-           <Image
+          <Image
             src="/assets/Zebbingo_Logo_RGB.png"
             alt="Zebbingo Logo"
             fill
@@ -37,7 +37,7 @@ export default function Home() {
 
         {/* 5. Heading - Bold, ensure single line */}
         {/* Using clamp or responsive text to ensure it fits on one line */}
-        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight whitespace-nowrap w-full">
+        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight w-full">
           We&apos;re building something exciting.
         </h1>
 
@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* 7. CTA - Single line, Bold */}
         <div className="mt-8 w-full">
-          <p className="text-[clamp(1rem,3.5vw,1.8rem)] font-bold text-black whitespace-nowrap">
+          <p className="text-[clamp(1rem,3.5vw,1.8rem)] font-bold text-black">
             What will you find on your <span className="text-[#6EC4E8]">Zebbingo</span> adventure?
           </p>
         </div>
@@ -70,8 +70,8 @@ export default function Home() {
 
           {/* Left Column */}
           <div className="flex flex-col items-start space-y-0 -mt-12">
-             {/* Top Headline */}
-            <h1 className="text-5xl font-bold text-black leading-tight tracking-tight whitespace-nowrap">
+            {/* Top Headline */}
+            <h1 className="text-5xl font-bold text-black leading-tight tracking-tight">
               We&apos;re building something exciting.
             </h1>
 

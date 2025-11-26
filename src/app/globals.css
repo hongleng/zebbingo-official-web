@@ -69,11 +69,11 @@
   }
 
   @media (min-width: 1024px) {
-    /* body {
+    body {
       background-image: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.87)), url('/assets/background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-    } */
+    }
   }
 }
