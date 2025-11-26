@@ -18,8 +18,11 @@ export default function Home() {
           />
         </div>
 
-        {/* 2. Whitespace */}
-        <div className="h-8 md:h-12"></div>
+        {/* 2. Heading - Bold, ensure single line */}
+        {/* Using clamp or responsive text to ensure it fits on one line */}
+        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight w-full mt-8 mb-4">
+          We&apos;re building something exciting.
+        </h1>
 
         {/* 3. Cowboy Image - Glowing */}
         <div className="relative w-[80%] aspect-square max-w-[400px]">
@@ -31,15 +34,6 @@ export default function Home() {
             priority
           />
         </div>
-
-        {/* 4. Whitespace (same as above) */}
-        <div className="h-8 md:h-12"></div>
-
-        {/* 5. Heading - Bold, ensure single line */}
-        {/* Using clamp or responsive text to ensure it fits on one line */}
-        <h1 className="text-[clamp(1.2rem,4vw,2rem)] font-bold text-black leading-tight w-full">
-          We&apos;re building something exciting.
-        </h1>
 
         {/* 6. Main Text - Split into two paragraphs, NOT bold */}
         <div className="mt-4 text-base md:text-lg text-black leading-relaxed px-2 font-normal">
