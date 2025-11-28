@@ -62,7 +62,7 @@ export default function Home() {
           {/* Left Column */}
           <div className="flex flex-col items-start space-y-0 -mt-12">
             {/* Top Headline */}
-            <h1 className="text-5xl font-bold text-black leading-tight tracking-tight">
+            <h1 className="text-5xl font-bold text-black leading-tight tracking-tight whitespace-nowrap">
               We&apos;re building something exciting.
             </h1>
 
